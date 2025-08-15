@@ -1,0 +1,68 @@
+{ pkgs, lib, ... }: {
+  environment.systemPackages = with pkgs; [
+    vim
+    chromium
+    st
+    dmenu networkmanager_dmenu
+    networkmanagerapplet
+    slock
+    slstatus
+    mc
+    nix-search
+    zip unzip
+    tui-journal
+    alsa-utils
+    flameshot
+    obs-studio
+    mpv
+    keepassxc
+    git
+    hsetroot
+    telegram-desktop
+    lutris
+    kdePackages.kdenlive
+    qbittorrent
+    btop
+    blender
+    fastfetch
+    gpick
+    imv
+    krita
+    lmms
+    mindustry
+    nemo
+    nix-tree
+    redshift
+    scrcpy
+    steam-run-free
+    stress
+    tree
+    unityhub
+    virtualboxKvm
+    vlc
+    vscode
+    w3m
+    wget
+    winetricks
+    wineWowPackages.stableFull
+    lynx
+    elinks
+    links2
+    android-file-transfer
+    qemu
+    jre
+    android-tools
+    dotnetCorePackages.dotnet_10.sdk
+    dotnet-sdk_10
+    gnumake
+    obsidian
+  ];
+
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+   "steam"
+   "steam-unwrapped"
+   "unityhub"
+   "vscode"
+   "obsidian"
+  ];
+}
