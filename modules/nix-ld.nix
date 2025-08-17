@@ -39,5 +39,7 @@
     glibc
     sdl3
     SDL
+
+    fuse
   ];
 }

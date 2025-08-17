@@ -56,6 +56,7 @@
     dotnet-sdk_10
     gnumake
     obsidian
+    davinci-resolve
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
@@ -64,5 +65,6 @@
    "unityhub"
    "vscode"
    "obsidian"
+   "davinci-resolve"
   ];
 }

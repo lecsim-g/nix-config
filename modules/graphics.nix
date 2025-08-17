@@ -36,6 +36,7 @@
     "vscode"
     "nvidia-settings"
     "obsidian"
+    "davinci-resolve"
   ];
 
 }
