@@ -20,7 +20,6 @@
     hsetroot
     telegram-desktop
     lutris
-    kdePackages.kdenlive
     qbittorrent
     btop
     blender
@@ -41,24 +40,17 @@
     virtualboxKvm
     vlc
     vscode
-    w3m
     wget
     winetricks
     wineWowPackages.stableFull
-    lynx
     elinks
-    links2
     android-file-transfer
     qemu
-    jre
     android-tools
-    dotnetCorePackages.dotnet_10.sdk
-    dotnet-sdk_10
     gnumake
     obsidian
-#    davinci-resolve
     godot
-#    x265
+    openshot-qt
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
