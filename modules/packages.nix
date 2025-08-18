@@ -56,7 +56,9 @@
     dotnet-sdk_10
     gnumake
     obsidian
-    davinci-resolve
+#    davinci-resolve
+    godot
+#    x265
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
